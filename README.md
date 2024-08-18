@@ -1,4 +1,4 @@
-#Jarvis AI Chatbot:
+Jarvis AI Chatbot:
 
 This project implements a voice-enabled AI chatbot named "Jarvis" that leverages modern web technologies and APIs. The chatbot is built using React for the front end and Node.js for the back end, with image processing capabilities integrated through the Gemini API. It supports various functionalities such as speech recognition, natural language processing, and real-time interactions, offering a user-friendly interface and robust performance.
 
