@@ -1,18 +1,17 @@
-import React from 'react';
-import Chat from './components/Chat';
-import backgroundVideo from '../video/jarvis.mp4';
-import './App.css'; // Assuming you are using CSS for styling
+import React from "react";
+import ChatPage from "./pages/ChatPage";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import FileUpload from "./pages/FileUpload";
 
 function App() {
   return (
-    <div className='app-container'>
-      <video autoPlay loop muted id='background-video'>
-        <source src={backgroundVideo} type='video/mp4' />
-      </video>
-      <Chat />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/chat" element={<ChatPage />} />
+      <Route path="/image" element={<FileUpload />} />
+    </Routes>
   );
 }
 
 export default App;
-
